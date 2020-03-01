@@ -62,7 +62,7 @@ codigo segment 'code'
 
 		modo_video GRAFICO
 
-		;pintar una linea horizontal
+		;Rectangulo Relleno
 		mov cx,200
 		mov bx,60
 
@@ -78,6 +78,26 @@ codigo segment 'code'
 			dec bx
 			cmp bx, 20
 			jne bucle2
+
+
+
+		;Rectangulo Vacio
+		mov cx,200
+		
+		bucle3:
+			pixel cx,70,BLANCO
+			pixel cx,110,BLANCO
+			dec cx
+			cmp cx,100
+			jne bucle3
+
+		mov cx,110
+		bucle4:
+			pixel 200,cx,BLANCO
+			pixel 100,cx,BLANCO
+			dec cx
+			cmp cx,69
+			jne bucle4
 
 		pausa_tecla
 		modo_video TEXTO
