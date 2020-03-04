@@ -3,7 +3,7 @@ pila segment stack 'stack'
 pila ends
 
 datos segment 'data'
-	msg db 'Cambio de modo realizado $'
+	msg db 'Cambio de modo realizado, esperando ... $'
 datos ends
 
 codigo segment 'code'

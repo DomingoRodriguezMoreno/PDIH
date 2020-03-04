@@ -99,6 +99,11 @@ codigo segment 'code'
 			cmp cx,69
 			jne bucle4
 
+		;Pixeles
+		pixel 10,100,VERDE
+		pixel 100,10,ROSA
+		pixel 20,10,VERDE
+
 		pausa_tecla
 		modo_video TEXTO
 
